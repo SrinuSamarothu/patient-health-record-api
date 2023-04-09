@@ -224,14 +224,14 @@ namespace EntityFrame
 
         public PatientMedication UpdateMedication(PatientMedication medication)
         {
-            _PHdbcontext.PatientMedications.Update(medication);
+            _PHdbcontext.Update(medication);
             _PHdbcontext.SaveChanges();
             return medication;
         }
 
         public PatientTest UpdateTest(PatientTest test)
         {
-            _PHdbcontext.PatientTests.Update(test);
+            _PHdbcontext.Update(test);
             _PHdbcontext.SaveChanges();
             return test;
         }

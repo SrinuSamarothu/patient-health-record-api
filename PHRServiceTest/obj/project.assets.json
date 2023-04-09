@@ -9542,7 +9542,6 @@
     "net7.0": [
       "AutoFixture >= 4.18.0",
       "FluentAssertions >= 6.10.0",
-      "M:\\team organization\\patient-health-record-api\\PHRClassLibrary1\\PHREntityFrame.csproj",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "Moq >= 4.18.4",
       "PHRBusinessLogic >= 1.0.0",
@@ -9583,9 +9582,6 @@
           "projectReferences": {
             "M:\\team organization\\patient-health-record-api\\PHRBusinessLogic\\PHRBusinessLogic.csproj": {
               "projectPath": "M:\\team organization\\patient-health-record-api\\PHRBusinessLogic\\PHRBusinessLogic.csproj"
-            },
-            "M:\\team organization\\patient-health-record-api\\PHRClassLibrary1\\PHREntityFrame.csproj": {
-              "projectPath": "M:\\team organization\\patient-health-record-api\\PHRClassLibrary1\\PHREntityFrame.csproj"
             },
             "M:\\team organization\\patient-health-record-api\\PHRModels\\PHRModels.csproj": {
               "projectPath": "M:\\team organization\\patient-health-record-api\\PHRModels\\PHRModels.csproj"
@@ -9662,16 +9658,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'M:\\team organization\\patient-health-record-api\\PHRClassLibrary1\\PHREntityFrame.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "M:\\team organization\\patient-health-record-api\\PHRClassLibrary1\\PHREntityFrame.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

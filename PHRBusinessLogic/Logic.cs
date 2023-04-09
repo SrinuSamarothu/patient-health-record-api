@@ -107,7 +107,7 @@ namespace BusinessLogic
         public Patient_Health_Record UpdateHealthR(string id, Patient_Health_Record record)
         {
             var s = (from r in _repo.GetAllHealthRecords()
-                     where r.PatientId == id
+                     where r.AppointmentId == id
                      select r).FirstOrDefault();
             if (s != null)
             {
@@ -151,11 +151,11 @@ namespace BusinessLogic
 
         public Patient_Test UpdatePatientTest(string id, Patient_Test record)
         {
-            var z = (from r in _repo.GetAllHealthRecords()
-                     where r.AppointmentId == id
-                     select r).FirstOrDefault();
+            // var z = (from r in _repo.GetAllHealthRecords()
+            //          where r.AppointmentId == id
+            //          select r).FirstOrDefault();
             var s = (from r in _repo.GetAllTestRecords()
-                     where r.AppointmentId == z.AppointmentId
+                     where r.AppointmentId == id
                      select r).FirstOrDefault();
             if (s != null)
             {

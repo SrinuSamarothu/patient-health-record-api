@@ -22,18 +22,18 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 /*
 var config = builder.Configuration.GetConnectionString("HospitalDb");*/
-builder.Services.AddDbContext<PatientHealthDbContext>(Options => Options.UseSqlServer("Server=tcp:yashu-db-server.database.windows.net,1433;Initial Catalog=Patient_Health_DB; User ID=yashu;Password=Yash@123;"));
+builder.Services.AddDbContext<PatientHealthDbContext>(Options => Options.UseSqlServer("Server=tcp:teamperseverance.database.windows.net,1433;Initial Catalog=patienthistorydb;Persist Security Info=False;User ID=manoj;Password=Team@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
 builder.Services.AddScoped<IRepo, EfRepo>();
 builder.Services.AddScoped<ILogic, Logic>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
-//     app.UseSwagger();
-//     app.UseSwaggerUI();
-// }
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 

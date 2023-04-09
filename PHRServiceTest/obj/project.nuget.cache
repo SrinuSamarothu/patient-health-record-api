@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "DuEE/zN5tcTd8MLiKHBSkkRTMRiH1a+1YZjR5ls4Prlf1SvjFlQZTN3TBFIfUyhOgZK8XG7SVo4fTfq82fPbDA==",
-  "success": false,
+  "dgSpecHash": "lfhOMzhm1ehmziL7OJl/DFb3nI4GiOhP5Ua8GfneeuaijZkR4LjrRiWTiLXFlngdr8hf4lRfL1CgFGD4u3eR4w==",
+  "success": true,
   "projectFilePath": "M:\\team organization\\patient-health-record-api\\PHRServiceTest\\PHRServiceTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\manoj\\.nuget\\packages\\autofixture\\4.18.0\\autofixture.4.18.0.nupkg.sha512",
@@ -164,15 +164,5 @@
     "C:\\Users\\manoj\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "C:\\Users\\manoj\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'M:\\team organization\\patient-health-record-api\\PHRClassLibrary1\\PHREntityFrame.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "M:\\team organization\\patient-health-record-api\\PHRClassLibrary1\\PHREntityFrame.csproj",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
