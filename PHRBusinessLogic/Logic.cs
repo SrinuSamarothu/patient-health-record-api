@@ -127,12 +127,12 @@ namespace BusinessLogic
 
         public Patient_Medication UpdateMedicalReport(string id, Patient_Medication record)
         {
-            var z = (from r in _repo.GetAllHealthRecords()
-                     where r.AppointmentId == id
-                     select r).FirstOrDefault();
+            // var z = (from r in _repo.GetAllHealthRecords()
+            //          where r.AppointmentId == id
+            //          select r).FirstOrDefault();
 
             var s = (from r in _repo.GetAllMedication()
-                     where r.AppointmentId == z.AppointmentId
+                     where r.AppointmentId == id
                      select r).FirstOrDefault();
             if (s != null)
             {
