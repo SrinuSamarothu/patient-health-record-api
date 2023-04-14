@@ -1,0 +1,96 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: health-record-api-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /api/History/GetCompleteHistory/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/History/getBasics/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/Medication/AddMedicalRecords/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/Medication/updatemedication/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PatientAllergy/AddAllergyRecords/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PatientAllergy/modifyAllergy/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PBRecord/AddPBRecords/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PBRecord/modify/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PHRecord/AddPHRecords/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PHRecord/updateHr/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PTest/AddTestRecords/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
+      - path: /api/PTest/modifyTest/?p*
+        pathType: Prefix
+        backend:
+          service:
+            name: health-record-api
+            port:
+              number: 80
